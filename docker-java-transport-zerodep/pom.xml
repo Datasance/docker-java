@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>com.github.docker-java</groupId>
+		<groupId>io.github.datasance</groupId>
 		<artifactId>docker-java-parent</artifactId>
 		<version>0-SNAPSHOT</version>
 		<relativePath>../pom.xml</relativePath>
@@ -59,7 +59,7 @@
 
 					<artifactSet>
 						<excludes>
-							<exclude>com.github.docker-java:docker-java-transport</exclude>
+							<exclude>io.github.datasance:docker-java-transport</exclude>
 							<exclude>net.java.dev.jna:jna-platform</exclude>
 							<exclude>net.java.dev.jna:*</exclude>
 							<exclude>org.slf4j:slf4j-api</exclude>
@@ -67,7 +67,7 @@
 					</artifactSet>
 					<filters>
 						<filter>
-							<artifact>com.github.docker-java:docker-java-transport-httpclient5</artifact>
+							<artifact>io.github.datasance:docker-java-transport-httpclient5</artifact>
 							<excludes>
 								<exclude>com/github/dockerjava/httpclient5/ApacheDockerHttpClient.class</exclude>
 								<exclude>com/github/dockerjava/httpclient5/ApacheDockerHttpClient$*</exclude>
