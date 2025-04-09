@@ -20,9 +20,9 @@
 	</licenses>
 
 	<scm>
-		<connection>scm:git:git@github.com:docker-java/docker-java.git</connection>
-		<url>git@github.com:docker-java/docker-java.git</url>
-		<developerConnection>scm:git:git@github.com:docker-java/docker-java.git</developerConnection>
+		<connection>scm:git:git@github.com:datasance/docker-java.git</connection>
+		<url>git@github.com:datasance/docker-java.git</url>
+		<developerConnection>scm:git:git@github.com:datasance/docker-java.git</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
 
