@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-SymbolicName: com.github.docker-java
+Bundle-SymbolicName: io.github.datasance
 Bundle-Version: ${parsedVersion.osgiVersion}
 Bundle-Name: ${project.name}
 Version-Patterns:
