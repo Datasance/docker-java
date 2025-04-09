@@ -31,4 +31,4 @@ jobs:
           MAVEN_CENTRAL_TOKEN: ${{ secrets.OSSRH_PASSWORD }}
           MAVEN_GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
         # run: ./mvnw deploy -DaltReleaseDeploymentRepository="$MAVEN_DEPLOYMENT_REPOSITORY" -DskipTests
-        run: mvn deploy -Prelease -DskipTests
+        run: ./mvnw deploy -Prelease -DskipTests
