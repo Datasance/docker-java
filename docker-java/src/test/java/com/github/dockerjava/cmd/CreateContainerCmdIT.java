@@ -56,6 +56,7 @@ import static com.github.dockerjava.api.model.Capability.NET_ADMIN;
 import static com.github.dockerjava.api.model.HostConfig.newHostConfig;
 import static com.github.dockerjava.core.RemoteApiVersion.VERSION_1_23;
 import static com.github.dockerjava.core.RemoteApiVersion.VERSION_1_24;
+import static com.github.dockerjava.core.RemoteApiVersion.VERSION_1_43;
 import static com.github.dockerjava.junit.DockerMatchers.isGreaterOrEqual;
 import static com.github.dockerjava.junit.DockerMatchers.mountedVolumes;
 import static com.github.dockerjava.core.DockerRule.DEFAULT_IMAGE;
@@ -1139,6 +1140,8 @@ public class CreateContainerCmdIT extends CmdIT {
 
     @Test
     public void createContainerWithAnnotations() throws DockerException {
+        assumeThat("API version should be >= 1.43", dockerRule, isGreaterOrEqual(VERSION_1_43));
+
         Map<String, String> annotations = new HashMap<>();
         annotations.put("com.example.key1", "value1");
         annotations.put("com.example.key2", "value2");

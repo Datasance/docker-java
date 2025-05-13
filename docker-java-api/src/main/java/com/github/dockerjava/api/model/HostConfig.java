@@ -73,6 +73,9 @@ public class HostConfig extends DockerObject implements Serializable {
     @JsonProperty("NanoCpus")
     private Long nanoCPUs;
 
+    /**
+     * @since {@link com.github.dockerjava.core.RemoteApiVersion#VERSION_1_43}
+     */
     @JsonProperty("Annotations")
     private Map<String, String> annotations;
 
